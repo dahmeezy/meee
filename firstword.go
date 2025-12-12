@@ -1,9 +1,10 @@
 package piscine
 
-import "github.com/01-edu/z01"
+// import "github.com/01-edu/z01"
 
-func FirstWord(s string) {
+func FirstWord(s string) string {
 	started := false
+	fword:=""
 
 	for _, c := range s {
 		// skip leading spaces/tabs
@@ -14,7 +15,7 @@ func FirstWord(s string) {
 		// once we hit a letter, start collecting
 		if c != ' ' && c != '\t' {
 			started = true
-			z01.PrintRune(c)
+			fword+=string(c)
 			continue
 		}
 
@@ -23,6 +24,5 @@ func FirstWord(s string) {
 			break
 		}
 	}
-
-	z01.PrintRune('\n')
+	return fword + "\n"
 }

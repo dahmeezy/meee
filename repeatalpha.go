@@ -1,8 +1,8 @@
 package piscine
 
-import "github.com/01-edu/z01"
+func RepeatAlpha(s string) string {
+	var result string
 
-func RepeatAlpha(s string) {
 	for _, c := range s {
 		var count int
 		if c >= 'a' && c <= 'z' {
@@ -10,11 +10,12 @@ func RepeatAlpha(s string) {
 		} else if c >= 'A' && c <= 'Z' {
 			count = int(c - 'A' + 1)
 		} else {
+			result += string(c)
 			continue // skip non-letters
 		}
 		for i := 0; i < count; i++ {
-			z01.PrintRune(c)
+			result += string(c)
 		}
 	}
-	z01.PrintRune('\n')
+	return result
 }
