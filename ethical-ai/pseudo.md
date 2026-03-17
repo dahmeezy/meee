@@ -1,3 +1,4 @@
+```
 start
 pseudocode for palindrome
 create a function named is_palindrome() that takes string
@@ -8,4 +9,4 @@ check for only numbers and letters
 if its num or al add to the empty string and change to lowercase
 reverse that clean_string characters
 and compare with the original one.
-
+```

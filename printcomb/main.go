@@ -1,0 +1,33 @@
+package main
+
+import "github.com/01-edu/z01"
+
+func main() {
+
+	for i := '0'; i <= '7'; i++ {
+		for j := i + 1; j <= '8'; j++ {
+			for k := j + 1; k <= '9'; k++ {
+				z01.PrintRune(i)
+				z01.PrintRune(j)
+				z01.PrintRune(k)
+				if i != '7' || j != '8' || k != '9' {
+					z01.PrintRune(',')
+					z01.PrintRune(' ')
+				}
+
+			}
+		}
+	}
+	z01.PrintRune('\n')
+}
+
+
+func isNegative(nb int) {
+	if nb < 0 {
+		z01.PrintRune('T')
+		z01.PrintRune('\n')
+	}else {
+		z01.PrintRune('F')
+		z01.PrintRune('\n')
+	}
+}
