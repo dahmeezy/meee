@@ -30,7 +30,7 @@ func main() {
 	bannerData, err := os.ReadFile("standard.txt")
 
 	if err != nil {
-		fmt.Println("Error reading banner file")
+		fmt.Println("Error reading banner file", err)
 		return
 	}
 
