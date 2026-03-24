@@ -12,7 +12,7 @@ func Asciifs(str string, ban string) {
 	// Read the content of the specified banner file (e.g., standard.txt) and store
 	banner, err := os.ReadFile(ban + ".txt")
 	if err != nil {
-		fmt.Println("Error reading banner file")
+		fmt.Println("Error reading banner file", err)
 		return
 	}
 
