@@ -7,7 +7,7 @@ import (
 )
 
 // Ascii reads a banner file and prints the input string in ASCII art format.
-func Ascii(str string, ban string) {
+func Asciifs(str string, ban string) {
 
 	// Read the content of the specified banner file (e.g., standard.txt) and store
 	banner, err := os.ReadFile(ban + ".txt")
