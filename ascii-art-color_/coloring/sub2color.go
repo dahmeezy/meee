@@ -1,6 +1,5 @@
 package coloring
 
-//a variadic parameter in which you can pass 0 or more substrings
 func Sub2color(str string, sub ...string) []bool {
 
 	// length of the main string

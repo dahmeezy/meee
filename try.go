@@ -22,7 +22,23 @@ import "strings"
 //		return result
 //	}
 
-func Sep(sen string) []string {
-	words := strings.Split(sen, "e")
-	return words
+func ToJadenCase(str string) string {
+  res:=""
+  if str==""{
+    return " "
+  } else{
+    words:=strings.Fields(str)
+    for _,word:=range words{
+      for i,c :=range word{
+        if i==0 && (c>='a'&&c<='z'){
+          res+=string(int(c)-32)
+        } else{
+          res+=string(c)
+        }
+      }
+    }
+  }  
+  return res // your code here...
+  
+  
 }

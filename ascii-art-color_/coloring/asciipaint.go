@@ -46,7 +46,7 @@ func Asciicolor(bannerData, str, sub, colorName string) {
 					fmt.Print(colorCode + banner[index+i] + "\033[0m")
 
 				} else {
-					
+
 					//print plainly
 					fmt.Print(banner[index+i])
 				}

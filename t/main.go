@@ -1,8 +1,8 @@
 package main
 
 import (
-	"fmt"
-	"piscine"
+	// "fmt"
+	// "piscine"
 )
 
 func main() {
@@ -13,9 +13,11 @@ func main() {
 
 	// words:=[]string{"eat", "zainab","sad","good", "apple", "bully"}
 
-	sen:="the_boy_goes_to_learn"
+	// sen:="the_boy_goes_to_learn"
 	
-	fmt.Println(piscine.Sep(sen))
+	// fmt.Println(piscine.ToJadenCase("This website is for losers LOL!"))
 	
 
+
+	// fmt.Println(piscine.TestHtml())
 }

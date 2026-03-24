@@ -27,7 +27,7 @@ func main() {
 	//gets the colorname from the argument passed
 	colorName := strings.TrimPrefix(os.Args[1], "--color=")
 
-	bannerData, err := os.ReadFile("standard.txt")
+	bannerData, err := os.ReadFile("shadow.txt")
 
 	if err != nil {
 		fmt.Println("Error reading banner file")
