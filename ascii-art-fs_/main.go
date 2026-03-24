@@ -22,5 +22,5 @@ func main() {
 		str = os.Args[1]
 		ban = os.Args[2]
 	}
-	fs.Ascii(str, ban)
+	fs.Asciifs(str, ban)
 }
