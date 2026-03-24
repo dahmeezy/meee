@@ -1,0 +1,7 @@
+# Ignore all .txt files
+*.txt
+
+# But keep the 3 banner files
+!standard.txt
+!shadow.txt
+!thinkertoy.txt
