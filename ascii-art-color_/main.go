@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	if len(os.Args) < 3 {
+	if len(os.Args) < 2 || len(os.Args) > 4 {
 		return
 	}
 
@@ -18,16 +18,16 @@ func main() {
 		str = os.Args[3]
 
 		sub = os.Args[2]
+	} else if len(os.Args) == 2 {
+		str = os.Args[1]
 	} else {
-		sub = ""
-
 		str = os.Args[2]
 	}
 
 	//gets the colorname from the argument passed
 	colorName := strings.TrimPrefix(os.Args[1], "--color=")
 
-	bannerData, err := os.ReadFile("shadow.txt")
+	bannerData, err := os.ReadFile("standard.txt")
 
 	if err != nil {
 		fmt.Println("Error reading banner file", err)
