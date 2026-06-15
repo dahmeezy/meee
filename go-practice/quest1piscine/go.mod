@@ -1,4 +1,4 @@
-module go-practice
+module gopractice
 
 go 1.22.2
 

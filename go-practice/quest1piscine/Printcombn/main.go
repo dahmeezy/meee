@@ -1,6 +1,6 @@
 package main
 
-import piscine "go-practice"
+import piscine "gopractice"
 
 func main() {
 	piscine.PrintCombN(3)

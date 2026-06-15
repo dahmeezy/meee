@@ -1,6 +1,6 @@
 package coloring
 
-func Sub2color(str string, sub ...string) []bool {
+func Sub2color(str, sub string) []bool {
 
 	// length of the main string
 	lstr := len(str)
@@ -11,7 +11,7 @@ func Sub2color(str string, sub ...string) []bool {
 	//make a string of bool of the same length as the sentence/string
 	checklist := make([]bool, lstr)
 
-	if lsub == 0 || sub[0] == "" {
+	if lsub == 0 || sub == "" {
 
 		for i := range checklist {
 
@@ -23,16 +23,15 @@ func Sub2color(str string, sub ...string) []bool {
 	}
 
 	//gets the substring and its length
-	target := sub[0]
-	ltag := len(target)
+	
 
 	for i := 0; i < lstr; i++ {
 
 		// checking for where part of the string matches the target and also makes sure that it doesnt overflow
-		if i+len(target) <= lstr && str[i:i+ltag] == target {
+		if i+len(sub) <= lstr && str[i:i+lsub] == sub {
 
 			// make all those points that matches the target true in the checklist
-			for j := i; j < i+ltag; j++ {
+			for j := i; j < i+lsub; j++ {
 				checklist[j] = true
 			}
 		}
